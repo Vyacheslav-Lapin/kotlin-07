@@ -5,4 +5,4 @@ import org.springframework.stereotype.Component
 
 //@ConfigurationProperties("mykafka")
 @Component
-class MyKafkaProperties(@Value("localhost:2181") val bootstrapAddress: String)
+class MyKafkaProperties(@Value("localhost:9092") val bootstrapAddress: String)
