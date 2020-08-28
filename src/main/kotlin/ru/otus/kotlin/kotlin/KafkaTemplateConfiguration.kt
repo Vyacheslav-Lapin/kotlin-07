@@ -15,7 +15,7 @@ class KafkaTemplateConfiguration(val kafkaProperties: MyKafkaProperties) {
 
 
     @Bean
-    fun kafkaTemplate(): KafkaTemplate<*, *> = KafkaTemplate(producerFactory())
+    fun kafkaTemplate()= KafkaTemplate(producerFactory())
 
     @Bean
     fun producerFactory(): ProducerFactory<Any?, Any?> {
